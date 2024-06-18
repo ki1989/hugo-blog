@@ -29,15 +29,19 @@ languages:
       tag: tags
       series: series
     menu:
-      main:
+      main:    
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 1
         - name: アーカイブ
-          url: archives
+          url: /archives/
           weight: 5
         - name: 検索
-          url: search/
+          url: /search/
           weight: 10
         - name: タグ
-          url: tags/
+          url: /tags/
           weight: 20
         # - name: WiKi
         #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
@@ -104,7 +108,7 @@ params:
 
   editPost:
     URL: "https://github.com/ki1989/hugo-blog/tree/master/content"
-    Text: "Suggest Changes" # edit text
+    Text: "変更の提案" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # label:
@@ -144,12 +148,12 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    noClasses: false
+    # noClasses: false
     # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
 
 # privacy:
 #   vimeo:

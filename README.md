@@ -5,15 +5,20 @@
 Hugoをインストール
 ```powershell
 winget install Hugo.Hugo.Extended
+hugo version
 ```
 githubのリポジトリをクローン
 ```powershell
 git clone https://github.com/ki1989/hugo-blog.git
+git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
 ```
-Hugoを起動
+Hugoを開発モードで起動
 ```powershell
 hugo server
 ```
+ブラウザで開く
+
+http://localhost:1313/
 
 ## リソース
 - Hugo
